@@ -1,0 +1,94 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    height: 1750px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(10, 10, 11), rgb(32, 28, 10));
+    position: relative;
+    padding-top: 5rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem 0;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 110rem;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+.TEXT {
+    display: flex;
+    flex-wrap: wrap; /* Permet à la grille de s'ajuster */
+    gap: 20px; /* Espace entre les éléments */
+}
+
+.product {
+    flex: 1 1 calc(25% - 20px); /* Quatre produits par ligne avec un espace de 20px */
+    background-color: rgba(255, 255, 255, 0.09);
+    border: 0.1px solid #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.product img {
+    width: 100%; /* Ajuste la largeur de l'image pour remplir le conteneur */
+    height: auto; /* Conserve le ratio de l'image */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin: 5px 0; /* Espace autour des paragraphes */
+}
+
+.product:hover {
+    transform: scale(1.03);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+img{
+    width: 230px;
+    max-height: 250px;
+    min-height: 250px;
+    height: 200px;
+}
+
+.buttons {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    justify-content: space-between; 
+    padding: 1.5rem 0;
+    color: #fff;
+}
+
+.buttons button {
+    background-color: #555;
+    border: none;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.buttons button:hover {
+    background-color: #777;
+}
